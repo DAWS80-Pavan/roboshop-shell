@@ -4,4 +4,4 @@ dnf install redis -y
 sed -i '/^bind/ c bind 0.0.0.0' /etc/redis/redis.conf
 sed -i '/protected-mode/ c protected-mode no' /etc/redis/redis.conf
 systemctl enable redis
-systemctl start redis
+systemctl restart redis
